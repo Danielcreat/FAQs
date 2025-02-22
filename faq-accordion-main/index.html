@@ -7,18 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <!-- Se precisar incluir o script externo, use a tag abaixo -->  
-   <link rel="stylesheet" href="style.css">
-  <!-- <script src="script.js"></script> -->
-  
+   <link rel="stylesheet" href="style.css">  
   <title>Frontend Mentor | FAQ accordion</title>
 
 </head>
 <body>
+  <!--imagems-->
+  <div class="barra">
+  <img src="assets/images/background-pattern-desktop.svg" alt="barra"></div>
   <div class="container">
   <img src="assets/images/icon-plus.svg" alt="mais">
   <img src="assets/images/icon-minus.svg" alt="menos">
   <img src="assets/images/icon-star.svg" alt="estrela">
-  <img src="assets/images/background-pattern-desktop.svg" alt="barra">
+
 
  <div class="faq-card">
   <h1 >FAQs</h1>
@@ -74,21 +75,6 @@
   </div>
     </div> <!--fim fa1-card-->
    </div> <!--conteiner-->
-  <script>
-    const botoes = document.querySelectorAll('.toggle-btn');
-    botoes.forEach(botao => {
-      botao.addEventListener('click', function() {
-        const targetId = this.getAttribute('data-target'); // Corrigido o método aqui
-        const conteudo = document.getElementById(targetId);
-
-        // Corrigindo a condição com o operador lógico correto
-        if (conteudo.style.display === 'none' || conteudo.style.display === '') {
-          conteudo.style.display = 'block';
-        } else {
-          conteudo.style.display = 'none';
-        }
-      });
-    });
-  </script>
+   <script src="script.js"></script>
 </body>
 </html>
